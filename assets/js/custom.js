@@ -58,3 +58,18 @@ document.addEventListener('DOMContentLoaded', function() {
       monthlyPricing.classList.remove('active');
   });
 });
+document.getElementById('hamburger-button').addEventListener('click', function() {
+  var menu = document.querySelector('.nav-menu-block');
+  var icon = document.getElementById('menu-icon');
+
+  menu.classList.toggle('open');
+  
+  // Toggle between hamburger and close icon
+  if (menu.classList.contains('open')) {
+      icon.src = 'assets/images/close-icon.svg'; // Change to the close icon image
+      icon.alt = 'Close Menu';
+  } else {
+      icon.src = 'assets/images/hamburger-icon.svg'; // Change back to the hamburger icon image
+      icon.alt = 'Menu';
+  }
+});
