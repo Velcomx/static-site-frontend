@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000/contact";
+const API_BASE_URL = "https://staticapi.velcomx.com/contact";
 
 const contactForm = document.querySelector(".contact-sec-form");
 
